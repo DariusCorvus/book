@@ -32,7 +32,7 @@ view! {
             // it functions the same way as event.target.value
             // in JavaScript, but smooths out some of the typecasting
             // necessary to make this work in Rust
-            set_name(event_target_value(&ev));
+            set_name.set(event_target_value(&ev));
         }
 
         // the `prop:` syntax lets you update a DOM property,
